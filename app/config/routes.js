@@ -25,6 +25,7 @@ Router.add({
 	breadcrumb : 'static.info'
 });
 
+// blogpost routes
 Router.add({
 	name       : 'blogpost#view',
 	methods    : ['get'],
@@ -51,4 +52,20 @@ Router.add({
 	methods    : ['delete'],
 	paths      : '/blogposts/{slug}',
 	handler    : 'blogpost#remove'
+});
+
+// comment routes
+
+Router.add({
+	name       : 'comment#create',
+	methods    : ['post'],
+	paths      : '/blogposts/{slug}/comments',
+	handler    : 'comment#create'
+});
+
+Router.add({
+	name       : 'comment#remove',
+	methods    : ['delete'],
+	paths      : '/blogposts/{slug}/comments/{commentSlug}',
+	handler    : 'comment#remove'
 });

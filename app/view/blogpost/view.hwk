@@ -1,10 +1,21 @@
 {% extend "layouts/body" %}
 
 {% block "main" %}
+    <a href="/blogposts">return to overview</a>
     <article>
         <h1>{{ blogpost.title }}</h1>
         <p>{{ blogpost.intro }}</p>
         <p>{{ blogpost.body }}</p>
-        <a href="/blogposts">return to overview</a>
 	</article>
+        <h2>Create comment</h2>
+         <form action="<%= "/blogposts/" + blogpost._id + "/comments" %>" method="post">
+              <label for="body">body</label>
+              <input type="html" name="body"></br>
+            <button type="submit">Create</button>
+        </form>
+        <ul>
+            {% each comments as key, comment %}
+                <li>{%= comment.body %}</li>
+            {% /each %}
+        </ul>
 {% /block %}

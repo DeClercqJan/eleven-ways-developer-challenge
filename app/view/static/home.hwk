@@ -23,4 +23,8 @@
 			</a>
 		</li>
 	</ul>
+
+    <p>
+        <a !Route="blogpost#viewall">To the exercise</a>
+    </p>
 {% /block %}

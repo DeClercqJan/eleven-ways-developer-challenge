@@ -1,7 +1,7 @@
 {% extend "layouts/body" %}
 
 {% block "main" %}
-    <a href="/blogposts">return to overview</a>
+    <a alt="return to overview" href="/blogposts">return to overview</a>
     <article>
         <h1>{{ blogpost.title }}</h1>
         <p>{{ blogpost.intro }}</p>
@@ -10,7 +10,7 @@
         <h2>Create comment</h2>
          <form action="<%= "/blogposts/" + blogpost._id + "/comments" %>" method="post">
               <label for="body">body</label>
-              <input type="html" name="body"></br>
+              <input type="html" name="body" id="body" ></br>
             <button type="submit">Create</button>
         </form>
         <ul>

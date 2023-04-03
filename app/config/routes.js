@@ -24,3 +24,31 @@ Router.add({
 	paths      : '/info',
 	breadcrumb : 'static.info'
 });
+
+Router.add({
+	name       : 'blogpost#view',
+	methods    : ['get'],
+	paths      : '/blogposts/{slug}',
+	handler    : 'blogpost#view'
+});
+
+Router.add({
+	name       : 'blogpost#viewall',
+	methods    : ['get'],
+	paths      : '/blogposts',
+	handler    : 'blogpost#viewall'
+});
+
+Router.add({
+	name       : 'blogpost#create',
+	methods    : ['post'],
+	paths      : '/blogposts',
+	handler    : 'blogpost#create'
+});
+
+Router.add({
+	name       : 'blogpost#remove',
+	methods    : ['delete'],
+	paths      : '/blogposts/{slug}',
+	handler    : 'blogpost#remove'
+});

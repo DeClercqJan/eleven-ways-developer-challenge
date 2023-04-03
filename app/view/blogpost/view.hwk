@@ -1,0 +1,10 @@
+{% extend "layouts/body" %}
+
+{% block "main" %}
+    <article>
+        <h1>{{ blogpost.title }}</h1>
+        <p>{{ blogpost.intro }}</p>
+        <p>{{ blogpost.body }}</p>
+        <a href="/blogposts">return to overview</a>
+	</article>
+{% /block %}

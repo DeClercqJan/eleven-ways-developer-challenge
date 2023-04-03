@@ -15,4 +15,11 @@
 	```bash
 	node server.js
 	```
-	
+
+# using nodemon
+
+    npx nodemon server.js
+
+# using linvodb3 
+
+    in temp fodler create subfolder linvodb3

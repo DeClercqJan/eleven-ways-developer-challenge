@@ -10,3 +10,4 @@
  * @license     MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 //alchemy.usePlugin('media');
+alchemy.usePlugin('ds-linvodb3');

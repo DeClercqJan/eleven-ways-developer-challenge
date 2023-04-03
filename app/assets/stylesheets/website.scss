@@ -1,0 +1,15 @@
+@import "_scss/_normalize.scss";
+
+:root {
+	--test-color: black;
+}
+
+[data-he-name="main"][data-he-template="static/home"] {
+	padding: 1rem;
+}
+
+.info-list {
+	li {
+		margin-bottom: 1rem;
+	}
+}

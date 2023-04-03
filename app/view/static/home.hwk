@@ -1,0 +1,26 @@
+{% extend "layouts/body" %}
+
+{% block "main" %}
+	<h1>Your Alchemy project "{{ project_name }}"</h1>
+	<p>Congratulations, it works!</p>
+	<p>Here are some links you might find useful:</p>
+
+	<ul class="info-list">
+		{# The `!Route=""` attribute will call upon the Router helper's `applyDirective` method #}
+		{# and generate the correct href for you. Can also be used in forms #}
+		<li><a !Route="Static#home">Link to this page</a></li>
+		<li>
+			<a
+				!Route="Static#info"
+				data-he-link="false"
+			>
+				Info about this Alchemy project
+			</a>
+		</li>
+		<li>
+			<a href="https://alchemy.elevenways.be" target="_blank">
+				Alchemy Documentation
+			</a>
+		</li>
+	</ul>
+{% /block %}

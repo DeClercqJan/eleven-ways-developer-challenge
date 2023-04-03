@@ -1,0 +1,5 @@
+{% extend "layouts/base" %}
+
+{% block "base" %}
+	<he-block data-he-name="main"></he-block>
+{% /block %}

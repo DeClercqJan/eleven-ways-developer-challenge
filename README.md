@@ -23,3 +23,11 @@
 # using linvodb3 
 
     in temp fodler create subfolder linvodb3
+
+# running mongodb
+    
+    example for Mac
+    brew install mongodb-community@6.0
+    brew services start mongodb-community
+    mongoosh
+    https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/ 
